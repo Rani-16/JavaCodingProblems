@@ -12,7 +12,7 @@ public class SeperateZerosAndOnes {
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.println("Zero count form the array ="+count);
         for (int i = 0; i < count; i++) {
             arr[i] = 0;
         }
