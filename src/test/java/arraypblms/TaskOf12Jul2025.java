@@ -10,7 +10,7 @@ public class TaskOf12Jul2025 {
 //
 //    Array Before Sorting : [1, 0, 2, 2, 0, 2, 1, 2, 1, 1, 2, 0]
 //    Array After Sorting : [0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2]
-//                           [0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2]
+//                          [0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2]
 //    How To Find Smallest And Second Smallest Element In An Array?
 
     public static void main(String[] args) {
@@ -58,6 +58,8 @@ public void approach2(){
 
             System.out.println("Array After Sorting: " + Arrays.toString(arr));
         }
-
+public void smallestAndSecondSmallest(){
+//    How To Find Smallest And Second Smallest Element In An Array?
+}
 
 }
