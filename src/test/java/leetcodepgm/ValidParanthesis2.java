@@ -1,0 +1,40 @@
+package leetcodepgm;
+
+import java.util.Stack;
+
+public class ValidParanthesis2 {
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+            if (ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch);
+            } else {
+                if (stack.isEmpty()) return false;
+
+                char top = stack.pop();
+                if ((ch == ')' && top != '(') ||
+                        (ch == '}' && top != '{') ||
+                        (ch == ']' && top != '[')) {
+                    return false;
+                }
+            }
+        }
+        return stack.isEmpty(); // if empty → all matched
+    }
+
+    public static void main(String[] args) {
+//        String s1 = "()";
+//        String s2 = "()[]{}";
+//        String s3 = "(]";
+        String s4 = "([)]";
+//        String s5 = "{[]}";
+
+//        System.out.println(isValid(s1)); // true
+//        System.out.println(isValid(s2)); // true
+//        System.out.println(isValid(s3)); // false
+       System.out.println(isValid(s4)); // false
+//        System.out.println(isValid(s5)); // true
+    }
+}
+
